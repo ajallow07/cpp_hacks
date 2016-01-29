@@ -10,7 +10,7 @@
 using namespace std;
 
 int Fibonacci (int n);
-
+long factorial (int val);
 
 int main (int argc, const char * argv[]) {
     // insert code here...
@@ -19,6 +19,7 @@ int main (int argc, const char * argv[]) {
     
     cout << "The Fibonacci of 20 is " << Fibonacci(10) <<"\n";
     
+    cout << "The factorial of 20 is: "<< factorial(20) << "\n";
     
     return 0;
 }
@@ -35,3 +36,16 @@ int Fibonacci (int n)
     
     
 }
+
+long factorial(int val)
+{
+    long result = 1;
+    
+    while (val > 1) {
+        result = result * val;
+        val--;
+    }
+    
+    return result;
+}
+    
