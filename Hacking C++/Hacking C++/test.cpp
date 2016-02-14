@@ -45,7 +45,5 @@ long factorial(int val)
         result = result * val;
         val--;
     }
-    
     return result;
 }
-    
